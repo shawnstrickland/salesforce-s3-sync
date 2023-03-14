@@ -1,40 +1,80 @@
-# This file is used for Git repositories to specify intentionally untracked files that Git should ignore. 
-# If you are not using git, you can delete this file. For more information see: https://git-scm.com/docs/gitignore
-# For useful gitignore templates see: https://github.com/github/gitignore
+# Created by https://www.toptal.com/developers/gitignore/api/salesforcedx,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=salesforcedx,visualstudiocode
 
-# Salesforce cache
-.sf/
-.sfdx/
-.localdevserver/
-deploy-options.json
+### SalesforceDX ###
+# GitIgnore for Salesforce Projects
+# Project Settings and MetaData
+.project
+.settings/
+.metadata
+build.properties
+config
 
-# LWC VSCode autocomplete
-**/lwc/jsconfig.json
+# Apex Log as optional
+apex-scripts/log
 
-# LWC Jest coverage reports
-coverage/
+# Eclipse specific
+salesforce.schema
+Referenced Packages
+bin/
+tmp/
+config/
+*.tmp
+*.bak
+local.properties
+.settings
+.loadpath
+.classpath
+*.cache
 
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Illuminated Cloud (IntelliJ IDEA)
+IlluminatedCloud
+out
+.idea
+*.iml
 
-# Dependency directories
-node_modules/
+# Mavensmate
+*.sublime-project
+*.sublime-settings
+*.sublime-workspace
+mm.log
 
-# Eslint cache
-.eslintcache
+# Haoide SublimeText
+.config
+.deploy
+.history
 
-# MacOS system files
-.DS_Store
+# OSX-specific exclusions
+.[dD][sS]_[sS]tore
 
-# Windows system files
-Thumbs.db
-ehthumbs.db
-[Dd]esktop.ini
-$RECYCLE.BIN/
+# The Welkin Suite specific
+**/.localHistory
 
-# Local environment variables
-.env
+*.sfuo
+
+TestCache.xml
+
+TestsResultsCache.xml
+
+### SalesforceDX Patch ###
+.sfdx
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.ionide
+
+# End of https://www.toptal.com/developers/gitignore/api/salesforcedx,visualstudiocode

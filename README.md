@@ -1,3 +1,6 @@
+# S3 Salesforce Synch
+An example application that utilizes SalesforceDX with AWS CDK and AppFlow to create easy event-driven communications between Salesforce and S3
+
 # Salesforce DX Project: Next Steps
 
 Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
